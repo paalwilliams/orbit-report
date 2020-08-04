@@ -19,7 +19,6 @@ export class AppComponent {
       function (response) {
         response.json().then(
           function (data) {
-            console.log(data);
             let fetchedSatellites = data.satellites;
             fetchedSatellites.forEach((x) => {
               let mySatellite = new Satellite(
